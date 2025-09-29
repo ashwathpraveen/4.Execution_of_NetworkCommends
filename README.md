@@ -29,9 +29,9 @@ This commands includes
 <BR>
 • Other IP Commands e.g. show ip route etc.
 <BR>
-```
-PROGRAM:
 
+## PROGRAM:
+```
 server;
 
 import socket 
@@ -41,7 +41,7 @@ while True:
     ip=input("Enter the website you want to ping ") 
     s.send(ip.encode()) 
     print(s.recv(1024).decode())
-    
+ 
 client;
 
 import socket 
